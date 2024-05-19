@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.Edit">
+    <Button
+        android:id="@+id/btntgle"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="9dp"
+        android:text="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempatt" />
+
+    <EditText
+        android:id="@+id/alamatt"
+        android:layout_width="341dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="Alamat"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tanggalt" />
+
+    <EditText
+        android:id="@+id/nimt"
+        android:layout_width="339dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="NIM"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/tmt"
+        android:layout_width="343dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="Tahun Masuk"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlpt" />
+
+    <EditText
+        android:id="@+id/tlpt"
+        android:layout_width="341dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Tlp/hp"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agamat" />
+
+    <EditText
+        android:id="@+id/tlt"
+        android:layout_width="343dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Tahun Lulus"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tmt" />
+
+    <EditText
+        android:id="@+id/namat"
+        android:layout_width="339dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Nama Alumni"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nimt" />
+
+    <EditText
+        android:id="@+id/agamat"
+        android:layout_width="341dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Agama"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alamatt" />
+
+    <EditText
+        android:id="@+id/pt"
+        android:layout_width="345dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:ems="10"
+        android:hint="Pekerjaan"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlt" />
+
+    <EditText
+        android:id="@+id/tanggalt"
+        android:layout_width="339dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="Tanggal Lahir"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempatt" />
+
+    <EditText
+        android:id="@+id/jabt"
+        android:layout_width="348dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:hint="Jabatan"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt" />
+
+    <EditText
+        android:id="@+id/tempatt"
+        android:layout_width="341dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="Tempat Lahir"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namat" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#006241"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <Button
+        android:id="@+id/sbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="32dp"
+        android:text="Simpan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/dbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="32dp"
+        android:text="Hapus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
